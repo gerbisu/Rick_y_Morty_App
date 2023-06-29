@@ -4,6 +4,6 @@ const Detail = () => {
     const aux = useParams();
     console.log(aux)
     return (
-        <div></div>
+        <div>Hola</div>
     )
 }
