@@ -1,23 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
 .cardContainer {
-    background-color:  #118a7e;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #d5def5; 
+    text-transform: uppercase;
     padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-  }
+    border-radius: 10px;
+    border: 2px solid #d5def5; 
+    background: #363a3b;
+    -webkit-box-shadow: 3px 3px #d5def5; 
+    box-shadow: 3px 3px #d5def5; 
+    overflow: hidden;
+}
 
 .cardContainer:hover {
     transform: translateY(-5px);
+    transition: transform 0.2s;
 }
   
 .cardInfo {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 8px;
 }
-  
+
+.origin{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
 .cardImage {
     margin-top: 10px;
     border-radius: 5px;
@@ -37,7 +49,7 @@
     padding: 5px 10px;
     border-radius: 10px;
     border: 2px solid #FAFAFA;
-    background: #2c5d63;
+    background: #191919;
     -webkit-box-shadow: 3px 3px #fafafa;
     box-shadow: 3px 3px #fafafa;
     cursor: pointer;
@@ -50,4 +62,10 @@
     -webkit-transform: translate(3px, 3px);
     -ms-transform: translate(3px, 3px);
     transform: translate(3px, 3px);
+  }
+
+  .name {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.5rem;
   }

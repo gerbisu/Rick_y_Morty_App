@@ -4,25 +4,26 @@
     margin: 10%;
   }
 
-.input {
+  .input{
+    text-decoration: none;
     font-family: monospace;
     font-size: 1rem;
     color: #FAFAFA;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #FAFAFA;
-    background: #2c5d63;
+    background: #363a3b;
     -webkit-box-shadow: 3px 3px #fafafa;
     box-shadow: 3px 3px #fafafa;
     cursor: pointer;
-    margin: 2%;
+    margin-right: 2%;
 }
 
-.input::placeholder {
-
-  color: #5a053f;
-
+.input:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s;
 }
+
 .input:active {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -31,9 +32,10 @@
     transform: translate(3px, 3px);
 }
 
-.input:hover {
-    transform: translateY(-5px);
-    transition: transform 0.2s;
+.input::placeholder {
+
+  color: #646363;
+
 }
 
 .button {
@@ -44,7 +46,7 @@
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #FAFAFA;
-    background: #2c5d63;
+    background: #191919;
     -webkit-box-shadow: 3px 3px #fafafa;
     box-shadow: 3px 3px #fafafa;
     cursor: pointer;

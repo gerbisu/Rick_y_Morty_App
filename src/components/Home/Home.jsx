@@ -1,5 +1,4 @@
-import Cards from "../components/Cards/Cards.jsx";
-import axios from "axios";
+import Cards from "../Cards/Cards.jsx";
 import React, { useEffect, useState } from "react";
 
 const Home = ({characters, onClose}) => {
