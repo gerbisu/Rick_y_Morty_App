@@ -28,12 +28,12 @@ const Favorites = () => {
       
     <div className={style.container}>
 
-      <select onChange = {handleOrder}>
+      <select onChange = {handleOrder} className={style.option}>
         <option value = "A">Asendente</option>
         <option value = "D">Decendente</option>
       </select>
 
-      <select onChange = {handleFilter}>
+      <select onChange = {handleFilter} className={style.option}>
         <option value = "Male">Male</option>
         <option value = "Female">Female</option>
         <option value = "Genderless">Genderless</option>
@@ -42,7 +42,7 @@ const Favorites = () => {
       </select>
     </div>
 
-     <div>
+     <div className={style.container}>
      {favorites?.map((pj) => {
        return (
        <Card 
