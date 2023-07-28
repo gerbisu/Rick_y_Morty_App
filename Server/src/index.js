@@ -3,7 +3,7 @@ const server = express();
 const router = require("./routes/index")
 const morgan = require("morgan")
 const PORT = 3001;
-// Copia este middleware en tu servidor:
+const {conn} = require("./DB_connection")
 
 server.use(express.json())
 
@@ -25,6 +25,7 @@ server.use((req, res, next) => {
 
 server.use("/rickandmorty", router);
 
-server.listen(PORT, () => {
+server.listen(PORT, async() => {
     console.log(`Server raised in port: ${PORT}`)
+    await conn.sync({force:true})
 })
